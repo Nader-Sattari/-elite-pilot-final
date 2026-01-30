@@ -1,0 +1,24 @@
+[
+  { "user_id": "U01", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U02", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U03", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U04", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U05", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U06", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U07", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+  { "user_id": "U08", "eligibility": "eligible", "cluster": "A", "match_preference": "peer" },
+
+  { "user_id": "U09", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U10", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U11", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U12", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U13", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U14", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U15", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+  { "user_id": "U16", "eligibility": "eligible", "cluster": "B", "match_preference": "complement" },
+
+  { "user_id": "U17", "eligibility": "ineligible", "cluster": "none", "match_preference": "none" },
+  { "user_id": "U18", "eligibility": "ineligible", "cluster": "none", "match_preference": "none" },
+  { "user_id": "U19", "eligibility": "eligible", "cluster": "none", "match_preference": "none" },
+  { "user_id": "U20", "eligibility": "eligible", "cluster": "none", "match_preference": "none" }
+]
