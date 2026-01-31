@@ -1,8 +1,10 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
+
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
+
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - 'run'
@@ -14,5 +16,7 @@ steps:
       - 'us-central1'
       - '--platform'
       - 'managed'
+      - '--allow-unauthenticated'
+
 images:
   - 'gcr.io/$PROJECT_ID/elite-pilot-api:$COMMIT_SHA'
