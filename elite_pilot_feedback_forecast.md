@@ -1,0 +1,3 @@
+- Months 1–3: Initial signal calibration and reduction of false positives
+- Months 4–6: Early pattern detection and stability monitoring
+- Months 7–12: Emergence of pattern consistency and refinement of scoring outputs
