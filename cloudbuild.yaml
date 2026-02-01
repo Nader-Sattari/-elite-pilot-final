@@ -1,5 +1,5 @@
 steps:
-  # Step 1: Build the project with official builder
+  # Step 1: Build the project with official buildpacks builder
   - name: 'gcr.io/buildpacks/builder:v1'
     args:
       - 'build'
@@ -7,23 +7,8 @@ steps:
       - 'gcr.io/$PROJECT_ID/elite-pilot-api:$COMMIT_SHA'
       - '.'
 
-  # Step 2: Deploy to Cloud Run
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-      - 'run'
-      - 'deploy'
-      - 'elite-pilot-api'
-      - '--image'
-      - 'gcr.io/$PROJECT_ID/elite-pilot-api:$COMMIT_SHA'
-      - '--region'
-      - 'us-central1'
-      - '--platform'
-      - 'managed'
-      - '--allow-unauthenticated'
-
 images:
   - 'gcr.io/$PROJECT_ID/elite-pilot-api:$COMMIT_SHA'
 
-# Logging only in Cloud Logging
 options:
   logging: CLOUD_LOGGING_ONLY
